@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un site de jeu de dés">
+    <meta name="author" content="Rémi FAURE">
+    <title>Dice</title>
+    <link rel="icon" href="/assets/img/dice.ico">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Dice</h1>
+    <p class="main-p">Jeu de dés</p>
+    <div class="new_game_container">
+        <img class="new_game_img" id="reset" src="/assets/img/add_circle.svg" alt="démarrer une nouvelle partie">
+        <p class="new_game_par">NEW GAME</p>
+
+    </div>
+    <div class="top_container">
+        <div class="player1">
+            <div class="player1_subinfos">
+                <p class="player_id">PLAYER 1</p>
+                <img id="point-p1" class="player1_point" src="/assets/img/point.png" alt="point player1">
+            </div>
+            <p class="player1-global_score" id="global-p1">0</p>
+        </div>
+        <div class="dice">
+            <img class="dice-img" id="dice" src="/assets/img/1.JPG" alt="image face 1 dé">
+        </div>
+        <div class="player2">
+            <div class="player2_subinfos">
+                <p class="player_id">PLAYER 2</p>
+                <img id="point-p2" class="player2_point" src="/assets/img/point.png" alt="point player1">
+            </div>
+            <p class="player2-global_score" id="global-p2">0</p>
+        </div>
+    </div>
+
+    <div class="low_container">
+        <div class="low_container_player1_container">
+            <p class="low_container_player1">CURRENT</p>
+            <p class="low_container_player1_current-score" id="current-p1">0</p>
+        </div>
+        <div class="actions_container">
+            <div class="roll_container">
+                <img class="roll-img" id="roll" src="/assets/img/roll dice.png" alt="image de lancer de dé">
+                <p class="roll-par">ROLL DICE</p>
+            </div>
+            <div class="hold_container">
+                <img class="hold-img" id="hold" src="/assets/img/hold.png" alt="image garder le score">
+                <p class="hold-par">HOLD</p>
+            </div>
+        </div>
+        <div class="low_container_player2_container">
+            <p class="low_container_player2">CURRENT</p>
+            <p class="low_container_player2_current-score" id="current-p2">0</p>
+        </div>
+    </div>
+    <div class="win_container">
+        <p class="win_p" id="win">You are the winner</p>
+    </div>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
