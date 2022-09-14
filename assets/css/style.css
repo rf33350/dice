@@ -38,6 +38,7 @@ h1 {
 }
 
 .player1_subinfos, .player2_subinfos {
+    width: 100px;
     display: flex;
     justify-content: center;
 }
@@ -93,7 +94,7 @@ h1 {
 
 .low_container_player1_container, .low_container_player2_container {
     background-color: brown;
-    width: 90px;
+    width: 100px;
     height: 70px;
     padding-top: 10px;
     padding-left: 10px;
