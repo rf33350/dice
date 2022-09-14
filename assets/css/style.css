@@ -34,9 +34,7 @@ h1 {
 }
 
 .top_container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .player1_subinfos, .player2_subinfos {
@@ -45,7 +43,6 @@ h1 {
 }
 
 .player_id {
-    margin-top: 1px;
     font-size: 17px;
 }
 
@@ -61,21 +58,28 @@ h1 {
 }
 
 .player1-global_score, .player2-global_score {
-    margin-top: 40px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     color: rgb(163, 105, 105);
 }
 
+.dice {
+    display: flex;
+    justify-content: center;
+}
+
 .dice-img {
-    width: 60px;
-    height: 60px;
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+
 }
 
 .low_container{
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .roll_container {
@@ -85,25 +89,28 @@ h1 {
 .hold_container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.low_container {
-    margin-bottom: 50px;
 }
 
 .low_container_player1_container, .low_container_player2_container {
     background-color: brown;
-    width: 70px;
+    width: 90px;
+    height: 70px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 5px;
+    padding-bottom: 10px;
+    border-radius: 2px;
 }
 
 .low_container_player1, .low_container_player2 {
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.actions_container {
+    width: 140px;
+    height: 70px;
 }
 
 .roll-img, .hold-img {
@@ -113,7 +120,7 @@ h1 {
 }
 
 .roll-par, .hold-par {
-    margin-top: 5px;
+    margin-top: 4px;
     margin-left: 5px;
     font-size: 15px;
     text-align: center;
@@ -121,7 +128,7 @@ h1 {
 
 .low_container_player1_current-score, .low_container_player2_current-score {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 
@@ -137,48 +144,58 @@ h1 {
         height: 100px;
     }
 
-    .player1_point {
-        padding-top: 9px;
-    }
-    
-    .player2_point {
-        padding-top: 9px;
+    .player1_point, .player2_point {
+        margin-top: 10px;
+        
     }
 
     .player_id {
         margin-top: 1px;
         font-size: 30px;
     }
+
     .player1-global_score, .player2-global_score {
         font-size: 50px;
     }
 
+    .low_container_player1_container, .low_container_player2_container {
+        width: 170px;
+        height: 120px;
+    }
+
+    .actions_container {
+        width: 170px;
+        height: 120px;
+    }
+
+    .roll_container {
+        margin-top: 20px;
+    }
+    
     .roll-img, .hold-img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
+        
     }
 
     .roll-par, .hold-par {
         margin-top: 2px;
         margin-left: 5px;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
     }
 
-    .low_container_player1_container, .low_container_player2_container {
-        width: 120px;
-    }
 
     .low_container_player1, .low_container_player2 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .low_container_player1_current-score, .low_container_player2_current-score {
-        font-size: 50px;
+        font-size: 35px;
     }
 
     .win_p {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .new_game_img {
@@ -200,12 +217,30 @@ h1 {
         height: 200px;
     }
 
+    .low_container {
+        margin-top: 100px;
+    }
+
+    .low_container_player1_container, .low_container_player2_container {
+        width: 180px;
+        height: 150px;
+    }
+
+    .actions_container {
+        width: 250px;
+        height: 150px;
+    }
+
     .player_id {
         margin-top: 1px;
         font-size: 30px;
     }
     .player1-global_score, .player2-global_score {
         font-size: 70px;
+    }
+
+    .roll_container, .hold_container {
+        margin-top: 20px;
     }
 
     .roll-img, .hold-img {
@@ -220,16 +255,13 @@ h1 {
         text-align: center;
     }
 
-    .low_container_player1_container, .low_container_player2_container {
-        width: 150px;
-    }
-
     .low_container_player1, .low_container_player2 {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .low_container_player1_current-score, .low_container_player2_current-score {
-        font-size: 50px;
+        margin-top: 40px;
+        font-size: 45px;
     }
 
     .win_p {
