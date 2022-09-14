@@ -38,13 +38,12 @@ h1 {
 }
 
 .player1_subinfos, .player2_subinfos {
-    width: 100px;
     display: flex;
     justify-content: center;
 }
 
 .player_id {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .player1_point {
@@ -217,6 +216,7 @@ h1 {
         width: 200px;
         height: 200px;
     }
+
 
     .low_container {
         margin-top: 100px;
