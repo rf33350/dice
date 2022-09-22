@@ -46,9 +46,9 @@ function newGame() {
 function victory() {
     win.style.display = "block";
     if (player === "p1") {
-        win.innerHTML = 'Player 1 win! Press reset to start a new game';
+        win.innerHTML = 'Player 1 win! Press NEW GAME to restart';
     } else if(player === "p2") {
-        win.innerHTML = 'Player 2 win! Press reset to start a new game';
+        win.innerHTML = 'Player 2 win! Press NEW GAME to restart';
     }
     roll.style.display = "none";
     hold.style.display = "none";
