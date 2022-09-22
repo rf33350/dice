@@ -1,3 +1,4 @@
+/* Variables declaration */
 let player1current = 0;
 let player2current = 0;
 let player1global = 0;
@@ -5,6 +6,7 @@ let player2global = 0;
 let tab = ["/assets/img/1.JPG", "/assets/img/2.JPG", "/assets/img/3.JPG", "/assets/img/4.JPG", "/assets/img/5.JPG", "/assets/img/6.JPG"];
 var player = "p1";
 
+/* Variables of DOM objects declaration */
 var new_game = document.getElementById('reset');
 var roll = document.getElementById('roll');
 var hold = document.getElementById('hold');
@@ -19,7 +21,7 @@ var dice = document.getElementById('dice');
 
 const music = new Audio('/assets/sounds/win.wav');
 
-
+/* functions used in the script */
 function generateRandomInt() {
     return Math.floor(Math.random() * 6 + 1);
   } 
@@ -52,6 +54,8 @@ function victory() {
     hold.style.display = "none";
     music.play();
 } 
+
+/* click functions */
 
 new_game.addEventListener("click", () => {
     newGame();

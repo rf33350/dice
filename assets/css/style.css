@@ -72,7 +72,6 @@ h1 {
     margin-top: 10px;
     width: 80px;
     height: 80px;
-
 }
 
 .low_container{
@@ -82,6 +81,11 @@ h1 {
     margin-top: 20px;
 }
 
+.actions_container {
+    width: 140px;
+    height: 70px;
+}
+
 .roll_container {
     display: flex;
     justify-content: center;
@@ -89,6 +93,19 @@ h1 {
 .hold_container {
     display: flex;
     justify-content: center;
+}
+
+.roll-img, .hold-img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.roll-par, .hold-par {
+    margin-top: 4px;
+    margin-left: 5px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .low_container_player1_container, .low_container_player2_container {
@@ -108,24 +125,6 @@ h1 {
     margin-bottom: 10px;
 }
 
-.actions_container {
-    width: 140px;
-    height: 70px;
-}
-
-.roll-img, .hold-img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.roll-par, .hold-par {
-    margin-top: 4px;
-    margin-left: 5px;
-    font-size: 15px;
-    text-align: center;
-}
-
 .low_container_player1_current-score, .low_container_player2_current-score {
     text-align: center;
     font-size: 20px;
@@ -139,6 +138,18 @@ h1 {
 }
 
 @media (min-width: 500px) {
+
+    .new_game_img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .new_game_par {
+        margin-top: 4px;
+        margin-left: 5px;
+        font-size: 30px;
+    }
+
     .dice-img {
         width: 100px;
         height: 100px;
@@ -146,7 +157,6 @@ h1 {
 
     .player1_point, .player2_point {
         margin-top: 10px;
-        
     }
 
     .player_id {
@@ -175,7 +185,6 @@ h1 {
     .roll-img, .hold-img {
         width: 30px;
         height: 30px;
-        
     }
 
     .roll-par, .hold-par {
@@ -183,11 +192,6 @@ h1 {
         margin-left: 5px;
         font-size: 20px;
         text-align: center;
-    }
-
-
-    .low_container_player1, .low_container_player2 {
-        font-size: 20px;
     }
 
     .low_container_player1_current-score, .low_container_player2_current-score {
@@ -198,16 +202,6 @@ h1 {
         font-size: 40px;
     }
 
-    .new_game_img {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .new_game_par {
-        margin-top: 4px;
-        margin-left: 5px;
-        font-size: 30px;
-    }
 }
 
 
@@ -217,6 +211,13 @@ h1 {
         height: 200px;
     }
 
+    .player_id {
+        margin-top: 1px;
+        font-size: 30px;
+    }
+    .player1-global_score, .player2-global_score {
+        font-size: 70px;
+    }
 
     .low_container {
         margin-top: 100px;
@@ -230,14 +231,6 @@ h1 {
     .actions_container {
         width: 250px;
         height: 150px;
-    }
-
-    .player_id {
-        margin-top: 1px;
-        font-size: 30px;
-    }
-    .player1-global_score, .player2-global_score {
-        font-size: 70px;
     }
 
     .roll_container, .hold_container {
